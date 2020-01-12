@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FundsOfMandatesData>
+  <FundsOfMandates>
+
+    <FundOfMandates
+      <InstrumentCode>inc001</InstrumentCode>
+      <InstrumentName>name1</InstrumentName>
+      <LiqAllocation>0.1</LiqAllocation>
+      <Mandates>
+        <Mandate>
+          <MandateId>1</MandateId>
+          <MandateName>mandate1</MandateName>
+          <Allocation>23</Allocation>
+        </Mandate>
+        <Mandate>
+          <MandateId>2</MandateId>
+          <MandateName>mandate2</MandateName>
+          <Allocation>24</Allocation>
+        </Mandate>
+      </Mandates>
+    </FundOfMandates>
+
+
+    <FundOfMandates>
+      <InstrumentCode>inc002</InstrumentCode>
+      <InstrumentName>name2</InstrumentName>
+      <LiqAllocation>1</LiqAllocation>
+      <Mandates>
+        <Mandate>
+          <MandateId>3</MandateId>
+          <MandateName>mandate3</MandateName>
+          <Allocation>25</Allocation>
+        </Mandate>
+        <Mandate>
+          <MandateId>4</MandateId>
+          <MandateName>mandate4</MandateName>
+          <Allocation>26</Allocation>
+        </Mandate>
+      </Mandates>
+    </FundOfMandates>
+
+  </FundsOfMandates>
+
+
+</FundsOfMandatesData>

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary1\Rabobank.Training.ClassLibrary.csproj" />
+    <ProjectReference Include="..\Rabobank.Training.Business.Interfaces\Rabobank.Training.Business.Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

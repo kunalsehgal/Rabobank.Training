@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="XMLSchema1"  targetNamespace="http://tempuri.org/XMLSchema1.xsd"  elementFormDefault="qualified"  xmlns="http://tempuri.org/XMLSchema1.xsd" xmlns:mstns="http://tempuri.org/XMLSchema1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="FundsOfMandatesData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="FundsOfMandates" minOccurs="0"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="FundsOfMandates">
+    <xs:annotation>
+      <xs:documentation>A collection of FundOfMandates</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="FundOfMandates" maxOccurs="unbounded"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+
+  <xs:element name="FundOfMandates">
+    <xs:annotation>
+      <xs:documentation>A FundOfMandates object</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="InstrumentCode"></xs:element>
+        <xs:element ref="InstrumentName"></xs:element>
+        <xs:element ref="LiquidityAllocation"></xs:element>
+        <xs:element ref="Mandates" minOccurs="0"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="InstrumentCode">
+    <xs:annotation>
+      <xs:documentation>InstrumentCode (ISIN)</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:maxLength value="12"></xs:maxLength>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+  <xs:element name="InstrumentName">
+    <xs:annotation>
+      <xs:documentation>InstrumentName (ISIN)</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:maxLength value="45"></xs:maxLength>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+
+  <xs:element name="LiquidityAllocation">
+    <xs:annotation>
+      <xs:documentation>the percentage allocated for liquidity for this perticular fund of mandates</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:decimal">
+        <xs:minInclusive value="0"></xs:minInclusive>
+        <xs:maxInclusive value="100"></xs:maxInclusive>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+  <xs:element name="Mandates">
+    <xs:annotation>
+      <xs:documentation>A collection of Mandates</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Mandate" maxOccurs="unbounded"></xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="Mandate">
+    <xs:annotation>
+      <xs:documentation>A mandate which is a fund or fund of Mandates under fund of Mandates</xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="MandateId"></xs:element>
+        <xs:element ref="MandateName"></xs:element>
+        <xs:element ref="Allocation"></xs:element>      
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+
+  <xs:element name="MandateId">
+    <xs:annotation>
+      <xs:documentation>id uniquely identifying Mandate as part of fund of Mandates</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:maxLength value="15"></xs:maxLength>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+  <xs:element name="MandateName">
+    <xs:annotation>
+      <xs:documentation>id uniquely identifying Mandate as part of fund of Mandates</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:string">
+        <xs:maxLength value="45"></xs:maxLength>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+  <xs:element name="Allocation">
+    <xs:annotation>
+      <xs:documentation>the percentage allocated this this mandate . All mandates under  a fund of Mandates should equal to 100</xs:documentation>
+    </xs:annotation>
+    <xs:simpleType>
+      <xs:restriction base="xs:decimal">
+        <xs:minInclusive value="0"></xs:minInclusive>
+        <xs:maxInclusive value="100"></xs:maxInclusive>
+      </xs:restriction>
+    </xs:simpleType>
+  </xs:element>
+
+</xs:schema>

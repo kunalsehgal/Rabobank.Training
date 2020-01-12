@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="UnitTest1.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="TestData\FundOfMandatesDataWithBadXML.xml" />
+    <None Remove="TestData\FundOfMandatesDataWithBlankFundsOfMandates.xml" />
+    <None Remove="TestData\FundOfMandatesDataWithValidFile.xml" />
+    <None Remove="TestData\FundOfMandatesDataWithXSDSchemaIssues.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="TestData\FundOfMandatesDataWithBadXML.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\FundOfMandatesDataWithBlankFundsOfMandates.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\FundOfMandatesDataWithValidFile.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\FundOfMandatesDataWithXSDSchemaIssues.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="5.10.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.4.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.0.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.0.0" />
+    <PackageReference Include="coverlet.collector" Version="1.2.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary1\Rabobank.Training.ClassLibrary.csproj" />
+    <ProjectReference Include="..\Rabobank.Training.BusinessLayer\Rabobank.Training.BusinessLayer.csproj" />
+  </ItemGroup>
+
+</Project>

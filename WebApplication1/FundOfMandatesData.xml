@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FundsOfMandatesData>
+  <FundsOfMandates>
+
+    <FundOfMandates>
+      <InstrumentCode>NL0000287100</InstrumentCode>
+      <InstrumentName>Optimix mix Fund</InstrumentName>
+      <LiquidityAllocation>0.1</LiquidityAllocation>
+      <Mandates>
+        <Mandate>
+          <MandateId>NL0000287100-01</MandateId>
+          <MandateName>Robeco Factor Momemtum</MandateName>
+          <Allocation>35.5</Allocation>
+        </Mandate>
+        <Mandate>
+          <MandateId>NL0000287100-02</MandateId>
+          <MandateName>BNPP Factor</MandateName>
+          <Allocation>38.3</Allocation>
+        </Mandate>
+        <Mandate>
+          <MandateId>NL0000287100-03</MandateId>
+          <MandateName>Robaco Factor Quality</MandateName>
+          <Allocation>26.1</Allocation>
+        </Mandate>
+      </Mandates>
+    </FundOfMandates>
+
+    <FundOfMandates>
+      <InstrumentCode>NL000029332</InstrumentCode>
+      <InstrumentName>Robaco core Aandelen T2</InstrumentName>
+      <LiquidityAllocation>1</LiquidityAllocation>
+      <Mandates>
+        <Mandate>
+          <MandateId>NL000029332-01</MandateId>
+          <MandateName>Vanguard MSCI</MandateName>
+          <Allocation>49.6</Allocation>
+        </Mandate>
+        <Mandate>
+          <MandateId>NL000029332-02</MandateId>
+          <MandateName>Blackrock World</MandateName>
+          <Allocation>49.4</Allocation>
+        </Mandate>
+      </Mandates>
+    </FundOfMandates>
+
+    <FundOfMandates>
+      <InstrumentCode>NL0000440584</InstrumentCode>
+      <InstrumentName>Test Fund Of Mandates</InstrumentName>
+      <LiquidityAllocation>1.5</LiquidityAllocation>
+      <Mandates>
+        <Mandate>
+          <MandateId>NL0000440584-01</MandateId>
+          <MandateName>Test Mandate-01</MandateName>
+          <Allocation>39.3</Allocation>
+        </Mandate>
+        <Mandate>
+          <MandateId>NL0000440584-02</MandateId>
+          <MandateName>Test Mandate-02</MandateName>
+          <Allocation>59.2</Allocation>
+        </Mandate>
+      </Mandates>
+    </FundOfMandates>
+
+    <FundOfMandates>
+      <InstrumentCode>NL0000440588</InstrumentCode>
+      <InstrumentName>Test Fund Ins</InstrumentName>
+      <LiquidityAllocation>2.0</LiquidityAllocation>
+      <Mandates>
+        <Mandate>
+          <MandateId>NL0000440588-01</MandateId>
+          <MandateName>mandate7</MandateName>
+          <Allocation>23</Allocation>
+        </Mandate>
+        <Mandate>
+          <MandateId>NL0000440588-02</MandateId>
+          <MandateName>mandate8</MandateName>
+          <Allocation>24</Allocation>
+        </Mandate>
+      </Mandates>
+    </FundOfMandates>
+
+  </FundsOfMandates>
+
+
+</FundsOfMandatesData>

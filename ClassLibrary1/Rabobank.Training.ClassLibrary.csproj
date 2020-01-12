@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="GeneratedClasses.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="FundOfMandatesSchema.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Data\FundOfMandatesData.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Rabobank.Training.ViewModels\Rabobank.Training.ViewModels.csproj" />
+  </ItemGroup>
+
+</Project>

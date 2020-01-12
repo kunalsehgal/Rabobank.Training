@@ -1,0 +1,35 @@
+<h1 id="tableLabel">Portfolio</h1>
+
+<p>the component demonstrates fetching a portfolio from the server</p>
+
+<p *ngIf="!positions"><em>Loading...</em></p>
+
+<div class="container" *ngIf="positions">
+  <div class="row">
+    <div class="col"><b>Code</b></div>
+    <div class="col-8"><b>Name</b></div>
+    <div class="col"><b>Value</b></div>
+  </div>
+  <hr />
+  <div *ngFor="let position of positions">
+    <div class="row">
+      <div class="col">{{position.code}}</div>
+      <div class="col-8">{{position.name}}</div>
+      <div class="col">{{position.value | currency:'EUR':'symbol':'1.0-0'}}</div>
+    </div>
+
+    <div class="row" *ngIf="position.mandates">
+      <div class="container" *ngFor="let mandate of position?.mandates">
+        <div class="row">
+          <div class="col-1"></div>
+          <div class="col-7">{{mandate.name}}</div>
+          <div class="col">{{mandate.allocation | percent :'1.1-1' }}</div>
+          <div class="col">{{mandate.value | currency:'EUR':'symbol':'1.0-0'}}</div>
+
+        </div>
+      </div>
+    </div>
+    <br/><br/>
+
+  </div>
+</div>
